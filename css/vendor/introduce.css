@@ -1,0 +1,82 @@
+/* Kỹ thuật che hình ảnh để ảnh không bị tràn ra khỏi khung   */
+[class*="ht-ratio--"] {
+    position: relative;
+    overflow: hidden;
+}
+
+[class*="ht-ratio--"]::before {
+    content: '';
+    display: block;
+}
+
+.ht-ratio__img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.s_fist{
+   background-image: url(/img/bg-9.png);
+}
+
+.s_fist .img{
+    height: 311px;
+    margin-top: 22px;
+}
+
+
+.s_fist .s_may{
+   background-color: #fff;
+   padding: 50px;
+}
+
+.s_fist .s_may h4{
+    font-size: 25px;
+    text-align: center;
+    color: #007d41;
+}
+
+.s_fist .s_may p{
+    font-size: 15px;
+}
+/* ---------------------------------------------------------s_conten-------------------------------------- */
+.s_conten{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0, rgba(255, 255, 255, 0.95) 100%), url(/img/bg-8.jpg) repeat 0 0;
+}
+.s_conten .conten{
+    background-color: #fff;
+    border: 1px #eee solid;
+}
+
+.s_conten .conten p{
+  padding: 10px 50px;
+  font-size: 15px;
+}
+
+.s_conten .conten .img{
+   width: 70%;
+   margin: 0 auto;
+
+}
+/* ------------------------------------------------------------- */
+@media(max-width:1260px){
+    .s-foder .s_card .s_title{
+        padding-top: 20px;
+    }
+    .s_fist .s_may h4 {
+        margin-top: 10px;
+    }
+    .s_fist .s_may{
+        padding: 5px 50px;
+    }
+    .s_fist .s_may p {
+        margin-top: -15px;
+    }
+    .s_conten .conten p{
+        padding: 10px 50px;
+    }
+
+}
+
+

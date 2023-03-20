@@ -1,0 +1,154 @@
+/* Kỹ thuật che hình ảnh để ảnh không bị tràn ra khỏi khung   */
+[class*="ht-ratio--"] {
+    position: relative;
+    overflow: hidden;
+}
+
+[class*="ht-ratio--"]::before {
+    content: '';
+    display: block;
+}
+
+.ht-ratio__img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.s_main{
+    margin-top: 30px;
+}
+
+.s-title .icon_1{
+    padding: 2px 4px;
+    border-bottom: 2px red solid;
+}
+
+.s_card_1 {
+    margin-top: 10px;
+}
+
+.s_card-1 img {
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+
+.s_card-1 p {
+    margin-left: 16px;
+    color: #007d41;
+    font-weight: bold;
+}
+
+.s_card-1 img:hover {
+    transform: calc(1.1);
+}
+
+.s-heading .s-title{
+    font-size: 20px;
+    margin-left: 18px;
+    margin-top: 38px;
+    position: relative;
+}
+.s-heading .s-title::before{
+    content: "";
+    width: 85%;
+    height: 1px;
+    background-color: #eee;
+    position: absolute;
+    top:35px;
+}
+
+.s_card-2{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.s_card-2 img{
+   overflow: hidden;
+   transition: all 0.3s;
+} 
+
+.s_card-2 .s_title{
+    margin-top: 10px;
+    font-size: 17px;
+    position: relative;
+}
+
+.s_card-2 p{
+    margin-top: 5px;
+    color:#007d41;
+}
+.s_card-2 img:hover{
+    transform: calc(1.1);
+}
+
+.s_card-2 .s_title:hover{
+    color:#007d41;
+}
+
+.s_heading .container .btn {
+    margin-left: 50%;
+}
+
+.s_heading .container button {
+    background-color: #fff;
+    width: 100px;
+    height: 32px;
+    margin-top: 40px;
+}
+
+.s_heading .container .s_conten {
+    margin-top: 40px;
+    margin-left: 26%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.s_heading .container .s_conten p {
+    margin-top: 20px;
+}
+.col-lg-9 button {
+    margin-top: 66px;
+    margin-left: 50%;
+    background-color: #fff;
+    height: 32px;
+}
+
+.conten .container .s_desc.active {
+    max-height: inherit;
+}
+
+.conten .container .s_desc {
+    max-height: 300px;
+    overflow: hidden;
+    margin-top: 6%;
+    margin-left: 26%;
+    position: relative;
+}
+.conten .container .s_btn {
+    margin-left: 26%;
+    margin-top: 18px;
+}
+
+.conten .container .s_btn button{
+    background-color: #fff;
+    height: 32px;
+    
+}
+
+@media(max-width:1260px){
+    .conten .container .s_desc{
+        margin-left: 0;
+    }
+    .col-lg-9 button{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .s-heading .btn{
+        text-align: center;
+    }
+    .conten .container .s_btn{
+        margin-left: 0;
+    }
+}

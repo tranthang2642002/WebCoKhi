@@ -1,0 +1,67 @@
+/* Kỹ thuật che hình ảnh để ảnh không bị tràn ra khỏi khung   */s_card-1 img 
+[class*="ht-ratio--"] {
+    position: relative;
+    overflow: hidden;
+}
+
+[class*="ht-ratio--"]::before {
+    content: '';
+    display: block;
+}
+
+.ht-ratio__img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.s_heading .container .s_conten p {
+    margin-top: 20px;
+}
+
+.conten .btn{
+    text-align: center;
+    
+}
+/* .conten .s_btn{
+    text-align: center;
+} */
+
+.conten button{
+    width: 85px;
+    background-color: rgb(255, 255, 255);
+    height: 34px;
+    margin-top: 50px;
+
+}
+.conten .s_desc.active{
+    max-height: inherit;
+}
+
+
+.conten .s_desc.active::after {
+    display: none;
+}
+
+.conten .s_desc {
+    max-height: 300px;
+    overflow: hidden;
+    margin-top:40px;
+    position: relative;
+    
+}
+
+.conten .s_desc::after{
+    content: "";
+    background: linear-gradient(to bottom, rgba(100, 100, 100, 0) 80%, #fff 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.conten .container .s_btn {
+    margin-top: 18px;
+}

@@ -1,0 +1,41 @@
+.conten{
+     background-color: #f5f5f5;
+}
+
+.conten .container{
+    background-color: #fff;
+}
+
+.conten .container .s_desc{
+    margin-top: 61px;
+    padding: 0 77px;
+    max-height: 300px;
+    overflow: hidden;
+}
+.conten .container .s_desc.active{
+    max-height:inherit;
+}
+
+.conten .container button{
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.conten .container .s_btn{
+    margin-left: 76px;
+    margin-top: 12px;
+}
+@media(max-width:768px){
+    .conten .container .s_desc{
+        padding: 0;
+    }
+    .s_boostrap .container .s_row .b_content ul li{
+        text-align: left;
+    }
+    .s_boostrap .container .s_row .b_content .b_title{
+        text-align: left;
+    }
+}
+
+

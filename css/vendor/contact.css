@@ -1,0 +1,140 @@
+
+.contact .s-title {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+}
+.contact .s_icon_4{
+    position: relative;
+}
+
+.contact .s_icon_4::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #ccc 50%, rgba(255, 0, 0, 0));
+    width: 16%;
+    height: 1px;
+    margin-left: 32%;
+    top: 62%;
+}
+
+.contact .s_icon_4::after{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #ccc 50%, rgba(255, 0, 0, 0));
+    width: 16%;
+    height: 1px;
+    top: 62%;
+    left: 53%;
+}
+
+.contact .icon_4 {
+    font-size: 24px;
+    margin-left: 49%;
+    margin-top: 15px;
+    color: #007d41;
+    position: relative;
+}
+
+.contact .icon_5 {
+    padding-right: 14px;
+    margin-left: 3px;
+    color: #999;
+}
+
+.contact .icon_6 {
+    padding-right: 10px;
+    color: #999;
+}
+
+.contact .b_title {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.contact .b_desc {
+    font-size: 15px;
+}
+
+.contact .b_phone {
+    font-size: 15px;
+    display: flex;
+}
+
+.contact .b_phone p {}
+
+.contact .b_phone p:nth-child(2) {
+    margin-left: 128px;
+
+}
+
+.contact .b_info_1 {
+    display: flex;
+}
+
+.contact .b_info_1 p:hover {
+    color: yellow;
+}
+
+.contact .b_info_1 a {
+    margin-left: 85px;
+}
+
+.contact .b_info_1 a:hover {
+    color: yellow;
+}
+
+.contact .b_text {
+    margin-top: -15px;
+}
+
+.contact .b_text form {
+    display: block;
+    margin-top: 30px;
+}
+
+.contact .b_text form input {
+    padding: 14px 4px;
+    margin-top: 7px;
+    width: 60%;
+    margin-left: 60px;
+    border: none;
+    border-bottom: 1px #999 solid;
+}
+.contact .b_text .b_btn{
+    width: 57px;
+    margin-top: 30px;
+    padding: 9px;
+    background-color: #007d41;
+    text-align: center;
+    margin-left: 200px;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.contact .b_text form input:focus {
+    outline:none;
+    border-bottom: 2px #007d41 solid;
+
+}
+/* -------------------------------------------------------------------------- */
+@media(max-width:1260px){
+    .contact .b_text form{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .contact .b_text .b_btn{
+        margin-left: 50%;
+    }
+}
+
+@media(max-width:460px){
+    .contact .b_phone p:nth-child(2){
+     margin-left: 20px;
+    }
+    .contact .b_info_1 a{
+        margin-left: 10px;
+    }
+}
